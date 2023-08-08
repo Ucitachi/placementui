@@ -19,3 +19,21 @@ def company(request, pk):
 def placement(request):
     return render(request, 'placement.html')
 
+def about(request):
+    return render(request, 'about.html')
+
+# path('login/',views.login, name='Login'),
+#     path('contact/',views.contact, name='contact'),
+#     path('about/',views.about, name='about'),
+
+def login(request):
+    return render(request, 'Login.html')
+
+def contact(request):
+    return render(render, 'contact.html')
+
+def about(request):
+    return render(render,'about.html')
+
+def register(request):
+    return render(request, 'Register.html')

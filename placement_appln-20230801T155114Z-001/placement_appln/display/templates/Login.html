@@ -63,11 +63,11 @@
           id="navbarCollapse"
         >
           <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="placement.html" class="nav-item nav-link active">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="{% 'placement' %}" class="nav-item nav-link active">Home</a>
+            <a href="{% 'about' %}" class="nav-item nav-link">About</a>
             <!-- <a href="class.html" class="nav-item nav-link">Register</a> -->
-            <a href="Login.html" class="nav-item nav-link">Login</a>
-            <a href="Companies.html" class="nav-item nav-link">Companies</a>
+            <a href="{% 'Login' %}" class="nav-item nav-link">Login</a>
+            <a href="{% 'Companies' %}" class="nav-item nav-link">Companies</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -76,13 +76,13 @@
                 >Notifications</a
               >
               <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Other Pages</a>
-                <a href="single.html" class="dropdown-item">Gotcha</a>
-              </div>
-            </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
-          </div>
-          <a href="Register.html" class="btn btn-secondary px-4 text-light" >Sign-up</a>
+          <a href="{% url 'blog' %}" class="dropdown-item">Other Pages</a>
+          <a href="{% url 'single' %}" class="dropdown-item">Gotcha</a>
+        </div>
+      </div>
+      <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+    </div>
+    <a href="{% url 'Register' %}" class="btn btn-secondary px-4 text-light" >Sign-up</a>
         </div>
       </nav>
     </div>
@@ -144,7 +144,7 @@
                     required = "required">
                   </div>  
                   <div>
-                    <a href="MyAccount.html" 
+                    <a href="{% url 'MyAccount' %}" 
                       class="btn btn-secondary btn-block border-0 py-3" 
                       style="font-size: larger;">
                       Login

@@ -64,11 +64,11 @@
           id="navbarCollapse"
         >
           <div class="navbar-nav font-weight-bold mx-auto py-0">
-            <a href="MyAccount.html" class="nav-item nav-link active">Home</a>
+            <a href="{% url 'MyAccount' %}" class="nav-item nav-link active">Home</a>
             <!-- <a href="about.html" class="nav-item nav-link">About</a> -->
             <!-- <a href="class.html" class="nav-item nav-link">Register</a> -->
             <!-- <a href="Login.html" class="nav-item nav-link">Login</a> -->
-            <a href="Companies.html" class="nav-item nav-link">Companies</a>
+            <a href="{% url 'Companies' %}" class="nav-item nav-link">Companies</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -77,13 +77,13 @@
                 >Notifications</a
               >
               <div class="dropdown-menu rounded-0 m-0">
-                <a href="blog.html" class="dropdown-item">Other Pages</a>
-                <a href="single.html" class="dropdown-item">Gotcha</a>
+                <a href="{% url 'blog' %}" class="dropdown-item">Other Pages</a>
+                <a href="{% url 'single' %}" class="dropdown-item">Gotcha</a>
               </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
           </div>
-          <a href="placement.html" class="btn btn-secondary px-4 text-light" >Log-out</a>
+          <a href="{% url 'Register' %}" class="btn btn-secondary px-4 text-light" >Log-out</a>
         </div>
       </nav>
     </div>
@@ -228,10 +228,10 @@
      <div class="col-lg-3 col-md-6 mb-5">
        <h3 class="text-light mb-4">Quick Links</h3>
        <div class="d-flex flex-column justify-content-start">
-         <a class="text-white mb-2" href="placement.html"
+         <a class="text-white mb-2" href="{% url 'placement' %}"
            ><i class="fa fa-angle-right mr-2"></i>Home</a
          >
-         <a class="text-white mb-2" href="about.html"
+         <a class="text-white mb-2" href="{% url 'about' %}"
            ><i class="fa fa-angle-right mr-2"></i>About Us</a
          >
          <!-- <a class="text-white mb-2" href="#"
@@ -243,7 +243,7 @@
          <a class="text-white mb-2" href="#"
            ><i class="fa fa-angle-right mr-2"></i>Our Aim</a
          >
-         <a class="text-white" href="contact.html"
+         <a class="text-white" href="{% url 'contact' %}"
            ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
          >
        </div>

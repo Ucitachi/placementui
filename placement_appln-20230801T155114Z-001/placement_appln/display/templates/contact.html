@@ -63,11 +63,11 @@
         id="navbarCollapse"
       >
         <div class="navbar-nav font-weight-bold mx-auto py-0">
-          <a href="placement.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
+          <a href="{% url 'placement' %}" class="nav-item nav-link active">Home</a>
+          <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
           <!-- <a href="class.html" class="nav-item nav-link">Register</a> -->
-          <a href="Login.html" class="nav-item nav-link">Login</a>
-          <a href="Companies.html" class="nav-item nav-link">Companies</a>
+          <a href="{% url 'Login' }%" class="nav-item nav-link">Login</a>
+          <a href="{% url 'Companies' %}" class="nav-item nav-link">Companies</a>
           <div class="nav-item dropdown">
             <a
               href="#"
@@ -76,13 +76,13 @@
               >Notifications</a
             >
             <div class="dropdown-menu rounded-0 m-0">
-              <a href="blog.html" class="dropdown-item">Other Pages</a>
-                <a href="single.html" class="dropdown-item">Gotcha</a>
+              <a href="{% url 'blog' %}" class="dropdown-item">Other Pages</a>
+                <a href="{% url 'single' %}" class="dropdown-item">Gotcha</a>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="Register.html" class="btn px-4 text-light" style="background-color: indigo;">Sign-up</a>
+        <a href="{% url 'Register' %}" class="btn px-4 text-light" style="background-color: indigo;">Sign-up</a>
       </div>
     </nav>
   </div>
@@ -305,7 +305,7 @@
             <a class="text-white mb-2" href="#"
               ><i class="fa fa-angle-right mr-2"></i>Home</a
             >
-            <a class="text-white mb-2" href="about.html"
+            <a class="text-white mb-2" href="{% url 'about' %}"
               ><i class="fa fa-angle-right mr-2"></i>About Us</a
             >
             <!-- <a class="text-white mb-2" href="#"
@@ -317,7 +317,7 @@
             <a class="text-white mb-2" href="#"
               ><i class="fa fa-angle-right mr-2"></i>Our Aim</a
             >
-            <a class="text-white" href="contact.html"
+            <a class="text-white" href="{% url 'contact' %}"
               ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
             >
           </div>
