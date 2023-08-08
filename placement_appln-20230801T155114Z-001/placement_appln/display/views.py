@@ -30,10 +30,17 @@ def login(request):
     return render(request, 'Login.html')
 
 def contact(request):
-    return render(render, 'contact.html')
+    return render(request, 'contact.html')
 
 def about(request):
-    return render(render,'about.html')
+    return render(request,'about.html')
 
 def register(request):
     return render(request, 'Register.html')
+
+def Dashboard(request):
+    return render(request, 'MyAccount.html')
+
+def companies(request):
+    return render(request, 'companies.html')
+

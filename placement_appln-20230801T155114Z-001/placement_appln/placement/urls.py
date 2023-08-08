@@ -21,13 +21,14 @@ from django.conf import settings
 from display import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('companies/', views.companies, name='Companies'),
+    path('companies/', views.companies, name='companies'),
     path('company/<int:pk>/', views.company, name='company'),
-    path('placement/',views.placement, name='placement'),
+    path('',views.placement, name='placement'),
     path('about/',views.about, name='about'),
     path('login/',views.login, name='Login'),
     path('contact/',views.contact, name='contact'),
     path('register/',views.register, name='Register'),
+    path('dashboard/',views.Dashboard, name='MyAccount'),
     
 ]
 
